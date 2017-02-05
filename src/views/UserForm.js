@@ -22,7 +22,7 @@ module.exports = {
         }),
         value: User.current.lastName,
       }),
-      m('button.button[type=submit]', 'Save')
+      m('button.button[type=submit]', { onclick: User.save }, 'Save')
     ]);
   },
 };
